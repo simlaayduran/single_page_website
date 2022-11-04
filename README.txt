@@ -1,0 +1,1 @@
+I have used Google Chrome Browser (full screen) to check my work. The fixed size of the web page is fixed to %100 in the body part of mini_3.html

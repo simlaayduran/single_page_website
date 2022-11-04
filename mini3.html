@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+    <head>
+    <meta charset="utf-8">
+    <title>Mini 3</title>
+    </head>
+       <style>
+    .links{
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    }
+
+    .links a{
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Gill Sans, sans-serif;
+    font-size: 115%;
+    text-decoration: none;
+    color: black;
+} 
+
+.button{
+  color: white;
+  background-color: green;
+  padding: 20px;
+  text-align: center;
+  font-size: 17px;
+  margin: 20px;
+  cursor:pointer;
+  border: none;
+}
+
+
+.middle{
+    background-color:rgb(7, 8, 63);
+    border: none;
+    padding: 20px;
+    height: 350px; 
+    font-family:Verdana,  sans-serif;
+    text-align: center;
+    float: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+    font-family: Gill Sans,  sans-serif;
+    font-size: 3vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer{
+background-color: white;
+padding: 20px;
+border: none;
+}
+
+ul{
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    margin-inline-start: 10px;
+}
+    figcaption{
+    font-family:Verdana,  sans-serif;
+    font-size: 90%; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:rgb(116, 113, 113);
+}
+
+body{
+    min-height: 100%;
+    margin : 0;
+    background-color: white;
+    text-align: center;
+}
+
+p{
+    font-family: Verdana, sans-serif;
+    font-size: 1.56vw;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+
+       </style>
+        <body class="body">
+        <div class="links" >
+            <img src="Minilogo.png" style="margin-left: 50px;"> 
+            &nbsp;&nbsp;&nbsp; <a  href="https://platform.sh/company/" style="margin-left: 50px;"><b>Platform</b></a>
+            <a  href="https://later.com/pricing/"><b>Plans</b></a> 
+            <a href="https://www.tandfonline.com/journals/teis20"><b>Enterprise</b></a> 
+            <a href="https://skillcrush.com/blog/web-developer-free-resources/" ><b>Resources</b></a>
+            <a href="https://www.educationservices.co.nz/about-us.html"><b>Education</b></a>&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.ubisoft.com/en-us/help/contact" style="margin-left: 50px;">Contact Us</a>
+             <a href="https://en.wikipedia.org/wiki/Login" style="margin-right:-10px;">Log In </a>&nbsp;
+            <button class="button" onclick="changeIcon() ,changeIconWeb(), changeIconPeople()" >Change Color</button> &nbsp;
+
+        </div>
+        <div class="middle">
+        <h2 style="color: white;">
+            See value from social sooner
+        </h2>
+            <p style="color: white;"> <br><br>Our training and strategic services have helped
+                <br> thousands of organizations succeed on social.
+                <br><br> <button class="button" onclick="window.location.href='https://www.servicenow.com/lpdem/demonow.html';" > Request a Demo</button> 
+            </p>
+        </div>
+        <div>
+        <ul class="footer">
+            <li>
+                <figure>
+                    <img id="Rocket1" src="Rocket.png" width=250>
+                    <figcaption><h3>2,500</h3>
+                        <br>enterprise organizations successfully launched </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img id="Web1" src="Web.png" width=250>
+                    <figcaption><h3><b>45,000</b></h3>
+                        <br> enterprise users unboarded seamlessly
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img id="People1" src="People.png" width=250>
+                    <figcaption><h3><b>200,000+</b></h3>
+                    <br> professionals trained on product and strategy</figcaption>
+                </figure>
+            </li>  
+        </ul>
+        </div>
+        <script>
+            function changeIcon() {
+                imgsrc = document.getElementById("Rocket1").src;
+                if(imgsrc.indexOf("Rocket.png")!= -1){
+                    document.getElementById("Rocket1").src = "Rocket2.png";
+                }
+                else {
+                    document.getElementById("Rocket1").src = "Rocket.png";
+                }
+            }
+            function changeIconWeb() {
+                imgsrc = document.getElementById("Web1").src;
+                if(imgsrc.indexOf("Web.png")!= -1){
+                    document.getElementById("Web1").src = "Web2.png";
+                }
+                else {
+                    document.getElementById("Web1").src = "Web.png";
+                }
+            }
+            function changeIconPeople() {
+                imgsrc = document.getElementById("People1").src;
+                if(imgsrc.indexOf("People.png")!= -1){
+                    document.getElementById("People1").src = "People2.png";
+                }
+                else {
+                    document.getElementById("People1").src = "People.png";
+                }
+            }
+        </script>
+        </body>
+</html>
